@@ -1,4 +1,5 @@
 import openpyxl
+import time
 from docx import Document
 from docx.shared import Pt
 from docx.enum.text import WD_ALIGN_PARAGRAPH
@@ -75,4 +76,6 @@ for item in range(len(fName)):
 
 saveFile = input('What do you want to name the file?\n')
 document.save(saveFile + '.docx')
-exit = input('Press ENTER to close the program')
+print('\nMaking New Spreadsheet...')
+time.sleep(4)
+exit = input('\n COMPLETE! Press ENTER to close the program')
